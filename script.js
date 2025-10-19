@@ -1,40 +1,38 @@
 document.getElementById("emailBtn").addEventListener("click", function () {
-    // Array of recipient emails
     const emails = [
         "durgapurps2024@gmail.com"
     ];
 
-    const subject = "Immediate action requested — Complaint for online religious insult by Subhodeep (Andal, Durgapur)";
+    const subject = "Immediate Action Requested — Complaint for Online Religious Insult by Subhodeep (Andal, Durgapur)";
+
     const body = `
-Dear Sir or Madam,
+Dear Sir,
 
-I hereby file a formal complaint requesting urgent investigation and legal action against the person named below for publicly doing blasphemy of Allah and the Prophet Muhammad (peace be upon him) on Facebook and via WhatsApp.
+I hereby file a formal complaint requesting urgent investigation and legal action against the person named below for publicly committing blasphemy of Allah and the Prophet Muhammad (peace be upon him) on Facebook and via WhatsApp.
 
-Accused: Subhodeep
+Accused Details:
+Name: Subhodeep
 Location: Andal, Durgapur, Paschim Bardhaman, West Bengal
 Mobile: +91 86170 78573
 
-Offending links:
+Offending Links:
 Facebook: https://www.facebook.com/share/14PRu4jfzj9/
-Related public post / campaign (tweet): https://x.com/labbaik46/status/1979797046745018847?t=wTFNwXJSSF2b-Lx3uySGQA&s=19
+Related Public Campaign (Tweet): https://x.com/labbaik46/status/1979797046745018847?t=wTFNwXJSSF2b-Lx3uySGQA&s=19
 
-Evidence provided in the given URL, including screenshots with timestamps and unedited screen recordings of the Facebook content and WhatsApp direct messages.
-URL: https://drive.google.com/drive/folders/1zzuBR4e7Ybf6MGvGlQzbM54TVJ0WhhAB?usp=drive_link
+Evidence Provided:
+Screenshots with timestamps and unedited screen recordings of the Facebook content and WhatsApp direct messages are available at the following link:
+https://drive.google.com/drive/folders/1zzuBR4e7Ybf6MGvGlQzbM54TVJ0WhhAB?usp=drive_link
 
-Requested actions:
-• Please investigate the matter.
+Requested Actions:
+• Please investigate the matter promptly.
 • Preserve account metadata of the accused.
-• Remove offending content where possible.
+• Remove offending content wherever possible.
 • Take legal action under applicable laws.
 • Kindly inform me of the FIR/case number and next steps.
 
-
 Thank you for your prompt attention.
+`;
 
-  `;
-
-    // Join emails with commas for multiple recipients in mailto
     const mailtoLink = `mailto:${emails.join(",")}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    console.log(mailtoLink);
     window.location.href = mailtoLink;
 });
